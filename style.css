@@ -63,11 +63,12 @@ body {
   border: 1px solid var(--color-muted);
   background: transparent;
   color: var(--color-text);
-  padding: 14px 28px;      /* same as primary */
-  border-radius: 999px;    /* fully rounded */
+  padding: 14px 28px;     
+  border-radius: 999px;   
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .auth-buttons {
   display: flex;
   gap: 10px;   
@@ -83,7 +84,7 @@ body {
 ========================= */
 .hero {
   text-align: center;
-    padding: 200px var(--space-md) 80px;
+  padding: 200px var(--space-md) 80px;
 }
 
 .hero h1 {
@@ -97,6 +98,7 @@ body {
   margin-bottom: var(--space-lg);
   font-size: 20px;
 }
+
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -139,7 +141,88 @@ body {
 }
 
 /* =========================
-   CTA
+   DEPLOY SECTION (CENTERED)
+========================= */
+.deploy-section {
+  background: var(--color-surface);    /* dark theme */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;             /* vertical alignment */
+  align-items: center;                 /* horizontal alignment */
+  color: var(--color-text);            /* white text */
+}
+
+.deploy-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;                 /* center horizontally */
+  text-align: center;                  /* center text */
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.deploy-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.deploy-section p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.deploy-section .features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.deploy-section .feature h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 220px;
+}
+
+.deploy-section .cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.deploy-section .cta .btn-primary {
+  padding: 16px 36px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.deploy-section .cta .btn-secondary {
+  padding: 16px 36px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  background: transparent;
+}
+
+.deploy-section .enterprise-link {
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+/* =========================
+   CTA (if needed)
 ========================= */
 .cta {
   text-align: center;
@@ -171,24 +254,34 @@ body {
   .hero-buttons {
     flex-direction: column;
   }
+
   .hero h1 {
-  font-size: 72px;
-  font-weight: 700;
-  letter-spacing: -2px;
-}
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
 
-.hero p {
-  color: #9ca3af;
-  margin-top: 20px;
-  font-size: 18px;
-}
+  .hero p {
+    color: #9ca3af;
+    margin-top: 20px;
+    font-size: 18px;
+  }
 
-button {
-  transition: all 0.3s ease;
-}
+  .deploy-section .features {
+    flex-direction: column;
+    gap: 25px;
+  }
 
-button:hover {
-  transform: translateY(-3px);
-}
+  .deploy-section .cta {
+    flex-direction: column;
+    gap: 15px;
+  }
 
+  button {
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+  }
 }
