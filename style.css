@@ -45,7 +45,25 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.logo-icon {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+.logo-text {
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 1.7rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-links {
